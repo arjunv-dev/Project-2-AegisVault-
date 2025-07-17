@@ -1,0 +1,44 @@
+version: '3.8'
+
+services:
+  aegis-vault:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
+    
+  # Note: In a real implementation, you would add:
+  # - Python ML backend service
+  # - Database service (PostgreSQL/MongoDB)
+  # - Redis for caching
+  # - NGINX for reverse proxy
+  
+  # Example services (commented out):
+  # ml-backend:
+  #   build: ./ml-backend
+  #   ports:
+  #     - "8000:8000"
+  #   environment:
+  #     - PYTHONPATH=/app
+  #   depends_on:
+  #     - database
+  #     - redis
+  
+  # database:
+  #   image: postgres:13
+  #   environment:
+  #     POSTGRES_DB: aegisvault
+  #     POSTGRES_USER: aegis
+  #     POSTGRES_PASSWORD: secure_password
+  #   volumes:
+  #     - postgres_data:/var/lib/postgresql/data
+  
+  # redis:
+  #   image: redis:6-alpine
+  #   ports:
+  #     - "6379:6379"
+
+# volumes:
+#   postgres_data:
