@@ -180,22 +180,6 @@ backend/
 - **Caching**: Intelligent data caching strategies
 - **Responsive Design**: Mobile-optimized interface
 
-## Contributing
 
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/new-feature`
-3. Commit your changes: `git commit -am 'Add new feature'`
-4. Push to the branch: `git push origin feature/new-feature`
-5. Submit a pull request
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Support
-
-For support and questions, please open an issue in the GitHub repository or contact the development team.
-
----
 
 **Note**: This is a frontend implementation that simulates the functionality of a cybersecurity AI platform. In a production environment, you would need to implement the backend services, database, and actual ML models for real threat detection capabilities.
